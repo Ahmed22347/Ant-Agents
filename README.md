@@ -59,8 +59,8 @@ Replace it with the contents from the following folder:
 Open the .env file and add the following lines, replacing them with your own keys if needed:
 ``` 
 MODEL=groq/llama-3.1-8b-instant
-GROQ_API_KEY=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
-SERPLY_API_KEY=Ldqg4GGZQKSJwFuoqYvgnssM
+GROQ_API_KEY="Your APi Key"
+SERPLY_API_KEY ="Your APi Key"
 ```
 ### ✅ Run the Crew
 To launch the crew:
