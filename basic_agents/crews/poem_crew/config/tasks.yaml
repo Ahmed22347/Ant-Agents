@@ -1,0 +1,221 @@
+find_website_task:
+  description: >
+    find the company website of {company}
+    Most likey the website is of the form <company name>.com
+    You should not try to verify if the website is correct.
+  expected_output: >
+    url link of the Website of {company}
+    No extra detail is wanted.
+  agent: researcher
+
+# industry_task:
+#   description: >
+#     Identify the industry or industries where {company} operates.
+#   expected_output: >
+#     The industry or sector classification for {company}.
+#   agent: business_researcher
+
+headquarters_task:
+  description: >
+    Find the location of {company}'s global headquarters.
+    You should do this with a google search.
+    take the most likely answer from the results. 
+    This can be a full addreess or a state and country or something in between.
+    Once you find this, immediately conclude the task  
+  expected_output: >
+    Headquarters of {company}.
+    Don't include any additional information, like reason for your choice
+  agent: business_researcher
+
+founding_year_task:
+  description: >
+    Find the year {company} was founded.
+    You should do this with a google search.
+    take the most likely year from the results.
+    If there are conflicting years, take the most mentioned or most likely source that exactly mentions when {company} was founded.
+    You should not try to verify the year.
+    You should stop searching once a likely year has been found. 
+  expected_output: >
+    The founding year of {company}.
+    The output should only be the year, without need for any reason or justification.
+  agent: business_researcher
+
+employee_count_task:
+  description: >
+    Find the number of employees at {company}.
+    Use available tools and use first or most mentioned number.
+    You dont need to find the exact number.
+  expected_output: >
+    best estimate of the number of employees at {company}.
+  agent: business_researcher
+
+# funding_raised_task:
+#   description: >
+#     Find the total funding raised by {company} to date.
+#   expected_output: >
+#     Total funding amount raised by {company}, in USD.
+#   agent: financial_analyst
+
+# revenue_task:
+#   description: >
+#     Find the most recent available revenue figure for {company}.
+#   expected_output: >
+#     Annual revenue figure for {company}, in USD.
+#   agent: financial_analyst
+
+valuation_task:
+  description: >
+    Find the most recent or estimated valuation of {company}.
+    You should return the most likely answer immediately,
+    If there are multiple likely answers, take the return, the average of the values or make an estimate.
+    If no relevant data return "Not available"
+  expected_output: >
+    Valuation figure for {company}.
+  agent: business_researcher
+
+# company_description_task:
+#   description: >
+#     Write a concise description of {company} based on its business activities.
+#   expected_output: >
+#     A brief paragraph summarizing {company}'s business activities.
+#   agent: business_writer
+
+# founders_task:
+#   description: >
+#     Find the names of {company}'s founders and provide LinkedIn profile URLs if available.
+#   expected_output: >
+#     Names and LinkedIn URLs of {company}'s founders.
+#   agent: business_researcher
+
+# key_contacts_task:
+#   description: >
+#     Identify key leadership contacts at {company} (CEO, CTO, CFO, etc.) with LinkedIn URLs if possible.
+#   expected_output: >
+#     List of key contacts with titles and LinkedIn URLs.
+#   agent: business_researcher
+
+# social_media_links_task:
+#   description: >
+#     Find and list all official social media profiles of {company}.
+#   expected_output: >
+#     URLs to {company}'s official social media accounts (LinkedIn, Twitter, Facebook, etc.).
+#   agent: social_media_researcher
+
+# ai_model_used_task:
+#   description: >
+#     Identify the primary AI model(s) {company} uses.
+#   expected_output: >
+#     Names of AI models used by {company}.
+#   agent: ai_researcher
+
+# primary_ai_use_case_task:
+#   description: >
+#     Find and describe the main AI use case(s) at {company}.
+#   expected_output: >
+#     Description of {company}'s primary AI use case(s).
+#   agent: ai_researcher
+
+# ai_frameworks_used_task:
+#   description: >
+#     Identify any AI/ML frameworks {company} utilizes (TensorFlow, PyTorch, etc.).
+#   expected_output: >
+#     List of AI frameworks used by {company}.
+#   agent: ai_researcher
+
+# ai_products_services_task:
+#   description: >
+#     List AI-powered products or services offered by {company}.
+#   expected_output: >
+#     Description and names of AI products/services.
+#   agent: ai_product_analyst
+
+# patent_details_task:
+#   description: >
+#     Find details about patents filed by {company} related to AI or technology.
+#   expected_output: >
+#     List of AI-related patents with titles and filing dates.
+#   agent: ip_researcher
+
+# ai_research_papers_task:
+#   description: >
+#     Find AI research papers published by {company} or its employees.
+#   expected_output: >
+#     Titles and links to AI research papers related to {company}.
+#   agent: ai_researcher
+
+# partnerships_task:
+#   description: >
+#     Find information about {company}'s major partnerships, especially in AI and tech.
+#   expected_output: >
+#     List of key partnerships with a brief description.
+#   agent: business_researcher
+
+# technology_stack_task:
+#   description: >
+#     Identify {company}'s technology stack, including AI tools, databases, and cloud platforms.
+#   expected_output: >
+#     A list of technology tools and platforms used by {company}.
+#   agent: tech_researcher
+
+# customer_base_task:
+#   description: >
+#     Describe {company}'s main customer segments and notable clients.
+#   expected_output: >
+#     Overview of {company}'s customer base with notable client names if available.
+#   agent: market_researcher
+
+# case_studies_task:
+#   description: >
+#     Find case studies or success stories involving {company}'s solutions.
+#   expected_output: >
+#     List or description of available case studies.
+#   agent: case_study_researcher
+
+# awards_task:
+#   description: >
+#     Find awards and recognitions received by {company}.
+#   expected_output: >
+#     List of awards and recognitions with dates.
+#   agent: pr_researcher
+
+# compliance_task:
+#   description: >
+#     Identify compliance standards and regulatory adherence {company} follows (e.g., GDPR, HIPAA).
+#   expected_output: >
+#     List of compliance standards and regulations followed by {company}.
+#   agent: compliance_analyst
+
+# market_presence_task:
+#   description: >
+#     Describe {company}'s presence in the market, including geographies served and market share insights if available.
+#   expected_output: >
+#     Overview of {company}'s market presence.
+#   agent: market_researcher
+
+# community_engagement_task:
+#   description: >
+#     Find information on {company}'s community engagement or CSR (Corporate Social Responsibility) initiatives.
+#   expected_output: >
+#     Description of {company}'s community engagement activities.
+#   agent: csr_analyst
+
+# ai_ethics_policies_task:
+#   description: >
+#     Find if {company} has published AI ethics guidelines or responsible AI policies.
+#   expected_output: >
+#     Details of {company}'s AI ethics policies.
+#   agent: ai_ethics_researcher
+
+# competitor_analysis_task:
+#   description: >
+#     Identify and describe {company}'s main competitors.
+#   expected_output: >
+#     A list and brief analysis of {company}'s competitors.
+#   agent: competitive_analyst
+
+# media_mentions_task:
+#   description: >
+#     Find recent media coverage mentioning {company}.
+#   expected_output: >
+#     List of notable media mentions with links and brief summaries.
+#   agent: media_monitor
