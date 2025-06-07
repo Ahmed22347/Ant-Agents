@@ -45,11 +45,10 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 uv tool install crewai
 ```
 ### Run the Crew
-To launch the crew:
+This step will create a .venv file containing installed packages.
 ```
 crewai run
 ```
-This step will create a .venv file containing installed packages.
 
 ### 7. Replace crewai Library with Custom Version
 Navigate to .venv/Lib/site-packages/
