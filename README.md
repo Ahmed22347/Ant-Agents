@@ -66,6 +66,11 @@ MODEL=groq/llama-3.1-8b-instant
 GROQ_API_KEY="Your APi Key"
 SERPLY_API_KEY ="Your APi Key"
 ```
+
+links to create api keys:
+https://serply.io/
+https://console.groq.com/docs/overview
+
 ### ✅ Run the Crew
 To launch the crew:
 ```
