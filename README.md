@@ -44,6 +44,11 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ```
 uv tool install crewai
 ```
+### Run the Crew
+To launch the crew:
+```
+crewai run
+```
 This step will create a .venv file containing installed packages.
 
 ### 7. Replace crewai Library with Custom Version
@@ -53,7 +58,7 @@ Locate the crewai directory
 
 Replace it with the contents from the following folder:
 
-📁 Custom CrewAI Folder
+📁 https://drive.google.com/drive/folders/1088nKgTdYQ32klBrXwFXcC8VSnxF9s2e?usp=sharing
 
 ### 8. Set Your API Keys
 Open the .env file and add the following lines, replacing them with your own keys if needed:
